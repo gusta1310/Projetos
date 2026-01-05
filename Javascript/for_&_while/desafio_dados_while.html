@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let dado1 = parseInt(Math.random() * 6 + 1) // sorteia um número entre 1 e 6 e deixa os numeros inteiros
+         let dado2 = parseInt(Math.random() * 6 + 1)
+
+         let contador = 0
+
+         while (dado1 != dado2) { // enquanto os dados forem diferentes, vai rodar o que tá dentro do laço
+            console.log(dado1, dado2) // mostra os valores dos dados no console
+            contador++ // adiciona 1 ao contador a cada volta do laço
+             dado1 = parseInt(Math.random() * 6 + 1) // depois que você já declarou a variável, não precisa colocar o let de novo
+             dado2 = parseInt(Math.random() * 6 + 1) // sorteia novos valores para os dados
+            
+         }
+         console.log("os dados iguais são: " + dado1 + 'e' + dado2)
+
+         // Oque está dentro do while é o que vai se repetir enquanto a condição for verdadeira, os parenteses é a condição 
+    </script>
+</body>
+</html>

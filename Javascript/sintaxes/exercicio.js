@@ -1,0 +1,22 @@
+
+        /*
+        let numero1 = prompt("Digite um número:")
+        let numero2 = prompt('digite outro numero:')
+        
+        alert("a soma matematica é: " + Number(numero1) + Number(numero2)) 
+        */
+
+        // let soma = numero1 + numero2
+        // alert("a soma é: " + soma) //jeito 1
+
+        //alert("a soma é: " + (Number(numero1) + Number(numero2))) //jeito 2
+
+        //alert("a soma é: " + (parseInt(numero1) + parseInt(numero2))) //jeito 3
+
+        // alert("a soma é: " + (parseFloat(numero1) + parseFloat(numero2))) //jeito 4
+        
+        let nome = prompt("qual seu nome?")
+        let idade = prompt("qual sua idade?")
+
+        alert("Olá " + nome + ", você tem " + idade + " anos!")
+    

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseFloat(prompt("Digite um numero de 0 a 10: "))
+        let num2 = parseFloat(prompt("Digite outro numero de 0 a 10: "))
+
+
+        if (num1 <= 10 && num2 <= 10 ) { // condição para validar as notas
+            
+            let media = (num1 + num2) / 2
+
+            if (media >= 7) {
+                alert("Aluno aprovado com média: " + media)
+            } else if (media < 7 ) {
+                alert("Aluno reprovado com média: " + media)
+                
+            }
+            
+        } else {
+           
+            
+        }
+        
+
+        
+        
+        
+       /* if (num1 < 0 || num1 > 10 || num2 > 10  || num2 < 0) {        // funciona corretamente, mas não é a melhor forma de fazer
+            alert("Nota inválida, digite um numero de 0 a 10")
+            
+        } else {
+            if (media >= 7) { // condição para verificar se o aluno foi aprovado ou reprovado
+                alert("Aluno aprovado com média: " + media)
+                
+            } else { 
+                alert("Aluno reprovado com média: " + media)
+                
+            }
+            
+        }
+        */
+    </script>
+</body>
+</html>

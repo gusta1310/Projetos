@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+        for (let i = 0; i <= 100 ; i++) {
+            if (i % 10 == 0) {
+                console.log(i)
+                continue;
+                
+            }
+            let num = parseInt(Math.random() * 100) + 1
+                if (i % num == 0) {
+                    console.log(i + " é divisivel por " + num);
+                    break
+                }
+            
+        }
+
+        console.log("Fim do programa");
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+
+        let nomes = ["cuauã", "maria", "pedro", "ana"];
+
+        let Novonome = prompt("Digite um nome:")
+
+        nomes[nomes.length] = Novonome; // adiciona o nome digitado ao final do array
+
+        for(let i = 0; i < nomes.length; i++){
+            document.write('nome: ' + nomes[i] +  "<br>");
+        }
+        console.log("A quantidade de nomes é: " + nomes.length); // nomes.lenght retorna a quantidade de itens no array
+        // 
+    </script>
+</body>
+</html>

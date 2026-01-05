@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+
+      let diasSemana = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+
+      for (let i = 0; i < diasSemana.length; i++) {
+          document.write('Dia da semana: ' + diasSemana[i] + "<br>");
+  
+      }
+        alert("O dia da semana é: " + diasSemana[new Date().getDay()]); // retorna o dia da semana atual (0-6)
+
+       //new Date() é um objeto que representa a data e hora atuais
+       // getDay() é um método que retorna o dia da semana (0-6)
+
+
+    </script>
+</body>
+</html>

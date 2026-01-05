@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Este código simula o lançamento de dois dados repetidamente até que a soma dos dados seja par 10 vezes.
+
+        // Variável para contar quantas vezes os dados foram jogados
+        let quantasvezesdadosjogados = 0;
+
+        // Variável para contar quantas vezes a soma dos dados foi par
+        let quantasvezesasomaehpar = 0;
+
+        // Loop infinito que continua até que a condição de parada seja atingida
+      while (true) {
+        // Gera um número aleatório entre 1 e 6 para o primeiro dado
+        let dado = parseInt(Math.random() * 6) + 1;
+        // Gera um número aleatório entre 1 e 6 para o segundo dado
+        let dado2 = parseInt(Math.random() * 6) + 1;
+
+        // Exibe no console os valores dos dados e o contador de jogadas
+        console.log(dado, dado2, quantasvezesdadosjogados);
+        // Incrementa o contador de jogadas
+        quantasvezesdadosjogados++;
+
+        // Verifica se a soma dos dados é par (divisível por 2)
+        if ((dado + dado2) % 2 == 0) {
+            // Se for par, incrementa o contador de somas pares
+            quantasvezesasomaehpar++;
+            
+        }
+
+        // Verifica se o contador de somas pares atingiu 10
+        if (quantasvezesasomaehpar >= 10) {
+            // Se sim, sai do loop
+            break
+            
+        }
+        
+      }
+      console.log("fim do loop");
+    </script>
+</body>
+</html>

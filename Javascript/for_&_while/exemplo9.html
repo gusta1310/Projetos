@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let n = parseFloat(prompt("Digite um número para ver a tabuada: "))
+       let contador = 0
+
+       if (n == null || Number.isNaN(n)) { //verifica se n é nulo ou não é um número
+            alert("Valor inválido")
+        
+       } else {
+            while (contador <= 100) { // enquanto contador for menor ou igual a 1000, adicione 1 ao contador
+            document.write(n + "x" + contador + "=" + (n * contador) + "<br>") 
+            contador++
+       }
+       document.write("Fim da tabuada")
+       }
+       
+     
+
+
+      // let n = prompt("Digite um número de 0 a 10: ")
+
+      // let contador = 0
+
+      // while (contador <= 10) {
+          //  document.write(n + "x" + contador + "=" + (n * contador) + "<br>")
+           // contador++
+      // }
+    </script>
+</body>
+</html>
